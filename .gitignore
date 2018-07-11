@@ -1,0 +1,22 @@
+# Finder's settings file (Mac).
+.DS_Store
+
+# Node.js modules.
+node_modules/
+
+# Ignore NPM's lockfile.
+# Since we're using Yarn, and it has it's own lockfile, there is no need for such.
+package-lock.json
+
+# Log files.
+*.log
+*.log.*
+
+# Generated sources.
+dist/
+
+# Generated type definitions.
+types/
+
+# Expo generated files.
+.expo/
