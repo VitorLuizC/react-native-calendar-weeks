@@ -25,6 +25,7 @@
   "scripts": {
     "start": "react-native-scripts-ts start",
     "start:ios": "react-native-scripts-ts ios",
-    "start:android": "react-native-scripts-ts android"
+    "start:android": "react-native-scripts-ts android",
+    "build": "cd library && tsc && cp package.json ../build && echo \"Done!\""
   }
 }

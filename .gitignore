@@ -15,8 +15,8 @@ package-lock.json
 # Generated sources.
 dist/
 
-# Generated type definitions.
-types/
+# Build generated files.
+build/
 
-# Expo generated files.
+# Expo files.
 .expo/
