@@ -18,6 +18,7 @@
     "@types/react-native": "^0.56.0",
     "react-native-scripts-ts": "^1.15.0",
     "react-native-typescript-transformer": "^1.2.10",
+    "tslib": "^1.9.3",
     "typescript": "^2.9.2"
   },
   "main": "./node_modules/react-native-scripts-ts/build/bin/crna-entry.js",

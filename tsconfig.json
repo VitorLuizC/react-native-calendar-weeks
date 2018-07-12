@@ -7,6 +7,9 @@
     // Type definition settings.
     "lib": [ "es2017" ],
 
+    // TSLib settings.
+    "importHelpers": true,
+
     // Module resolution settings.
     "module": "es2015",
     "moduleResolution": "node",
