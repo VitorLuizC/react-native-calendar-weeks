@@ -3,7 +3,6 @@ import { Text, TouchableOpacity, TouchableOpacityProps } from 'react-native';
 
 type ButtonProps = TouchableOpacityProps & {
   onPress?: () => any;
-  children: ReactNode;
 };
 
 const Button: SFC<ButtonProps> = ({ onPress, children, ...props }) => (
