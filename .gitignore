@@ -12,11 +12,9 @@ package-lock.json
 *.log
 *.log.*
 
-# Generated sources.
-dist/
-
-# Build generated files.
-build/
-
 # Expo files.
 .expo/
+
+# Generated type definitions & JavaScript sources.
+library/build/
+library/types/

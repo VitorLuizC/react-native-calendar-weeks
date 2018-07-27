@@ -23,9 +23,9 @@
   },
   "main": "./node_modules/react-native-scripts-ts/build/bin/crna-entry.js",
   "scripts": {
+    "build": "cd library && tsc",
     "start": "react-native-scripts-ts start",
     "start:ios": "react-native-scripts-ts ios",
-    "start:android": "react-native-scripts-ts android",
-    "build": "cd library && tsc && cp package.json ../build && echo \"Done!\""
+    "start:android": "react-native-scripts-ts android"
   }
 }

@@ -2,10 +2,10 @@
   "extends": "../tsconfig.json",
   "compilerOptions": {
     // Generated sources settings.
-    "outDir": "../build",
+    "outDir": "./build",
 
     // Generated type definitions settings.
     "declaration": true,
-    "declarationDir": "../build/types"
+    "declarationDir": "./types"
   }
 }

@@ -1,6 +1,6 @@
 {
   "name": "react-native-button",
   "version": "0.0.0",
-  "main": "index.js",
+  "main": "build/index.js",
   "types": "types/index.d.ts"
 }
