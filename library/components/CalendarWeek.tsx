@@ -21,12 +21,13 @@ export const CalendarWeek: SFC<CalendarWeekProps> = ({
 }) => (
   <View>
     {
-      week.map((date) =>
+      week.map((date) => (
         <CalendarWeekDate
+          key={ date.getTime() }
           date={ date }
           onPress={ onDatePress }
         />
-      )
+      ))
     }
   </View>
 );
