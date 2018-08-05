@@ -1,21 +1,17 @@
-import React, { Component } from 'react';
-import { StyleSheet, Text, View, Alert } from 'react-native';
-import { Button } from './build';
+import React from 'react';
+import { StyleSheet, View } from 'react-native';
+import { Calendar } from './library';
 
-type AppProps = { };
-
-class App extends Component<AppProps> {
-  private onButtonPress = () => Alert.alert('The button was pressed.');
-
-  render () {
-    return (
-      <View style={ styles.container }>
-        <Text>Hello World!</Text>
-        <Button onPress={ this.onButtonPress }>Opa!</Button>
-      </View>
-    );
-  }
-}
+export default () => (
+  <View style={ styles.container }>
+    <Calendar
+      from={ new Date(1996, 3 - 1, 28) }
+      onDatePress={ (date) => console.log({ date }) }
+      weeksAhead={ 2 }
+      weeksBehind={ 2 }
+    />
+  </View>
+);
 
 const styles = StyleSheet.create({
   container: {
@@ -24,5 +20,3 @@ const styles = StyleSheet.create({
     justifyContent: 'center'
   }
 });
-
-export default App;
