@@ -1,5 +1,5 @@
 import React, { SFC } from 'react';
-import { View } from 'react-native';
+import { View, StyleSheet } from 'react-native';
 import { Week } from '../model/Week';
 import { CalendarWeekDate } from './CalendarWeekDate';
 
@@ -19,7 +19,7 @@ export const CalendarWeek: SFC<CalendarWeekProps> = ({
   week,
   onDatePress
 }) => (
-  <View>
+  <View style={ styles.container }>
     {
       week.map((date) => (
         <CalendarWeekDate
@@ -31,3 +31,9 @@ export const CalendarWeek: SFC<CalendarWeekProps> = ({
     }
   </View>
 );
+
+const styles = StyleSheet.create({
+  container: {
+    flexDirection: 'row'
+  }
+});

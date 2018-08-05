@@ -4,6 +4,7 @@ import { WeekDaysNames } from '../model/WeekDaysNames';
 import { Week } from '../model/Week';
 import { getWeeksAhead, getWeek, getWeeksBehind } from '../helpers/getWeek';
 import { CalendarWeek } from './CalendarWeek';
+import { CalendarHeaderWeekDaysNames } from './CalendarHeaderWeekDaysNames';
 
 /**
  * `Calendar` props.
@@ -38,15 +39,20 @@ export class Calendar extends Component<CalendarProps> {
   render () {
     return (
       <View>
-        {
-          this.weeks.map((week, index) => (
-            <CalendarWeek
-              key={ index }
-              week={ week }
-              onDatePress={ this.props.onDatePress }
-            />
-          ))
-        }
+        <CalendarHeaderWeekDaysNames
+          weekDaysNames={ this.props.weekDaysNames }
+        />
+        <View>
+          {
+            this.weeks.map((week, index) => (
+              <CalendarWeek
+                key={ index }
+                week={ week }
+                onDatePress={ this.props.onDatePress }
+              />
+            ))
+          }
+        </View>
       </View>
     );
   }

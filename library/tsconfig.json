@@ -7,5 +7,9 @@
     // Generated type definitions settings.
     "declaration": true,
     "declarationDir": "./types"
-  }
+  },
+  "exclude": [
+    "build/",
+    "types/"
+  ]
 }
