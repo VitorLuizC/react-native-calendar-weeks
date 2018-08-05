@@ -36,7 +36,7 @@ export function getWeek (date: Date): Week {
 export function getWeeksAhead (date: Date, quantity: number): Array<Week> {
   const weeks = [ ...Array(quantity) ];
   return weeks.map((_, index) => {
-    const time = date.getTime() + (quantity - index) * WEEK;
+    const time = date.getTime() + (index + 1) * WEEK;
     return getWeek(new Date(time));
   });
 }
