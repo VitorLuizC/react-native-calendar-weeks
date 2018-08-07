@@ -23,7 +23,7 @@ export function getOnlyDate (date: Date): Date {
  * @param date
  */
 export function getWeek (date: Date): Week {
-  const sunday = getOnlyDate(date).getTime();
+  const sunday = getOnlyDate(date).getTime() - date.getDay() * DAY;
   const week = [ 0, 1, 2, 3, 4, 5, 6 ];
   return week.map((number) => new Date(sunday + number * DAY)) as Week;
 }

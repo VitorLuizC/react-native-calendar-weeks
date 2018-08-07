@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { View } from 'react-native';
 import { WeekDaysNames } from '../model/WeekDaysNames';
 import { Week } from '../model/Week';
-import { getWeeksAhead, getWeek, getWeeksBehind } from '../helpers/getWeek';
+import { getWeek, getWeeksAhead, getWeeksBehind } from '../helpers/week';
 import { CalendarWeek } from './CalendarWeek';
 import { CalendarHeaderWeekDaysNames } from './CalendarHeaderWeekDaysNames';
 
@@ -39,9 +39,7 @@ export class Calendar extends Component<CalendarProps> {
   render () {
     return (
       <View>
-        <CalendarHeaderWeekDaysNames
-          weekDaysNames={ this.props.weekDaysNames }
-        />
+        <CalendarHeaderWeekDaysNames weekDaysNames={ this.props.weekDaysNames } />
         <View>
           {
             this.weeks.map((week, index) => (
